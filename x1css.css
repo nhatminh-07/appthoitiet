@@ -49,3 +49,27 @@ h1 {
     background-color: red;
     box-shadow: 3px 3px 5px;
 }
+
+.d25072024 {
+    color:rgb(81, 96, 141)
+}
+
+.inheritance {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a:link {
+    color:red;
+}
+
+a:visited {
+    color:rgb(159, 180, 102);
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
