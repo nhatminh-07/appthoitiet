@@ -1,4 +1,8 @@
 
+.flexmain {
+    display: flex;
+}
+
 .flex-container {
     display: flex;
     background-color: rgb(33, 85, 137);
