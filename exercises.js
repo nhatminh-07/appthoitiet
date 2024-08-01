@@ -1,3 +1,4 @@
+
 // 1
 let challenge = '30 Days Of JavaScript';
 
@@ -14,10 +15,10 @@ console.log(challenge.toUpperCase());
 console.log(challenge.toLowerCase());
 
 // 6
-console.log(challenge.substring(1, s.length));
+console.log(challenge.substring(1, challenge.length));
 
 // 7
-console.log(challenge.substring(3, s.length));
+console.log(challenge.substring(3, challenge.length));
 
 // 8
 console.log(challenge.includes("Script"));
@@ -35,6 +36,7 @@ console.log(s1.split(", "));
 // 12
 console.log(challenge.replace('JavaScript', 'Python'));
 
+
 // 13
 console.log(challenge.charAt(15));
 
@@ -47,6 +49,7 @@ console.log(challenge.indexOf("a"));
 // 16
 console.log(challenge.lastIndexOf("a"));
 
+
 // 17 and 18
 let s2 = 'You cannot end a sentence with because because because is a conjunction';
 console.log(s2.indexOf("because"));
@@ -56,8 +59,9 @@ console.log(s2.lastIndexOf("because"));
 console.log(s2.search("because"));
 
 // 20
-s_with_space = "    I love JavaScript and programming!!!     "
+var s_with_space = "    I love JavaScript and programming!!!     "
 console.log(s_with_space.trim());
+
 
 // 21
 console.log(challenge.startsWith("30"));
@@ -65,18 +69,13 @@ console.log(challenge.startsWith("30"));
 // 22
 console.log(challenge.endsWith("t"));
 
+
 // 23
-var ns = 0;
-var res = 0;
+
 var str = "all days of javascript";
-while (res != -1) {
-    var res = str.match("a");
-    if (res != -1) {
-        console.log(ns + res);
-        ns += res;
-        str = str.substring(res, str.length);
-    }
-}
+var regEx = /a/gi;
+console.log(str.match(regEx));
+
 
 // 24
 var ss1 = '30 Days of';
