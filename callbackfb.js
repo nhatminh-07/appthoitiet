@@ -1,11 +1,6 @@
-// a callback function, the name of the function could be any name
-const callback = (n) => {
-    return n ** 2
+let duration = 10000
+console.log("Timer:", duration/1000, "seconds")
+function callback() {
+    console.log(1)
   }
-  ​
-  // function that takes other function as a callback
-  function cube(callback, n) {
-    return callback(n) * n
-  }
-  ​
-  console.log(cube(callback, 3))
+setTimeout(callback, duration)
